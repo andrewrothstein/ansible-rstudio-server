@@ -1,7 +1,7 @@
 ---
 galaxy_info:
   author: Andrew Rothstein
-  description: julialang role
+  description: RStudio role
   company: BlackRock
   license:
     - MIT
