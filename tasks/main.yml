@@ -1,0 +1,10 @@
+---
+# tasks file for rstudio
+- name: (Ubuntu) installing...
+  when: ansible_distribution == "Ubuntu"
+  include: Ubuntu.yml
+
+- name: (Fedora) installing...
+  when: ansible_distribution == "Fedora"
+  include: Fedora.yml
+  
