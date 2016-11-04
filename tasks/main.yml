@@ -1,10 +1,18 @@
 ---
 # tasks file for rstudio
-- name: (Ubuntu) installing...
-  when: ansible_distribution == "Ubuntu"
-  include: Ubuntu.yml
+- name: resolve platform specific vars
+  include_vars: "{{item}}"
+  with_first_found:
+    - "{{ansible_distribution}}-{{ansible_distribution_release}}.yml"
+    - "{{ansible_distribution}}.yml"
+    - "{{ansible_os_family}}.yml"
 
-- name: (Fedora) installing...
-  when: ansible_distribution == "Fedora"
-  include: Fedora.yml
-  
+- name: download pkg...
+  become: yes
+  become_user: root
+  get_url: >-
+    url={{rstudio_pkg_url}}
+    dest=/tmp/{{rstudio_pkg}}
+    mode=0644
+
+- include: '{{rstudio_installer|default("package")}}.yml'

@@ -1,0 +1,7 @@
+---
+- name: install R Studio package...
+  become: yes
+  become_user: root
+  package:
+    name: /tmp/{{rstudio_pkg}}
+    state: present

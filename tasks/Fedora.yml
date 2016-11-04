@@ -1,6 +1,0 @@
----
-- name: (Fedora) download R Studio
-  get_url: url='{{ rstudio_rpm_url }}' dest='/tmp/{{ rstudio_rpm }}'
-
-- name: (Fedora) install R Studio
-  yum: name='/tmp/{{ rstudio_rpm }}' state=present

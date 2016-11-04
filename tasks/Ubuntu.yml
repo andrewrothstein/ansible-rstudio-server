@@ -1,6 +1,0 @@
----
-- name: (Ubuntu) download R Studio
-  get_url: url='{{rstudio_deb_url}}' dest='/tmp/{{ rstudio_deb }}'
-
-- name: (Ubuntu) install R Studio
-  apt: deb='/tmp/{{ rstudio_deb }}'
