@@ -1,3 +1,4 @@
 ---
-rstudio_pkg : 'rstudio-{{ rstudio_ver }}-amd64.deb'
+rstudio_pkg_prefix : rstudio
+rstudio_pkg_suffix: amd64.deb
 rstudio_installer: deb
