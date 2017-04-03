@@ -20,7 +20,7 @@
   become_user: root
   get_url:
     url: '{{rstudio_server_pkg_url}}'
-    dest: /tmp/{{rstudio_pkg}}
+    dest: /tmp/{{rstudio_server_pkg}}
     mode: 0644
 
-- include: '{{rstudio_installer|default("package")}}.yml'
+- include: '{{rstudio_server_installer|default("package")}}.yml'
