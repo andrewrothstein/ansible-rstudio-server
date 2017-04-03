@@ -1,4 +1,4 @@
 ---
-rstudio_pkg_prefix : rstudio-server-rhel
-rstudio_pkg_suffix: x86_64.rpm
+rstudio_server_pkg_prefix : rstudio-server-rhel
+rstudio_server_pkg_suffix: x86_64.rpm
 

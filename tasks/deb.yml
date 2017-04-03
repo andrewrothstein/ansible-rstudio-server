@@ -2,4 +2,5 @@
 - name: install R Studio deb
   become: yes
   become_user: root
-  apt: deb='/tmp/{{rstudio_pkg}}'
+  apt:
+    deb: /tmp/{{rstudio_server_pkg}}

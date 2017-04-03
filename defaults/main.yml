@@ -1,4 +1,4 @@
 ---
 # defaults file for rstudio
-rstudio_ver : '1.0.136'
-rstudio_mirror: http://download2.rstudio.org
+rstudio_server_ver : '1.0.136'
+rstudio_server_mirror: http://download2.rstudio.org

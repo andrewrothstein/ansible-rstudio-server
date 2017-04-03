@@ -1,4 +1,4 @@
 ---
 # vars file for rstudio
-rstudio_pkg: '{{rstudio_pkg_prefix}}-{{rstudio_ver}}-{{rstudio_pkg_suffix}}'
-rstudio_pkg_url : '{{rstudio_mirror}}/{{rstudio_pkg}}'
+rstudio_server_pkg: '{{rstudio_server_pkg_prefix}}-{{rstudio_server_ver}}-{{rstudio_server_pkg_suffix}}'
+rstudio_server_pkg_url : '{{rstudio_server_mirror}}/{{rstudio_server_pkg}}'

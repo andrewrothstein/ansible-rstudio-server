@@ -1,4 +1,6 @@
 ---
-rstudio_pkg_prefix : rstudio
-rstudio_pkg_suffix: amd64.deb
-rstudio_installer: deb
+rstudio_server_deps:
+  - gdebi-core
+rstudio_server_pkg_prefix : rstudio-server
+rstudio_server_pkg_suffix: amd64.deb
+rstudio_server_installer: deb
