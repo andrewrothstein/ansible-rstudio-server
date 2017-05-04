@@ -12,14 +12,29 @@ galaxy_info:
         - 7
     - name: Fedora
       versions:
-        - all
+        - 23
+        - 24
+        - 25
     - name: Ubuntu
       versions:
-        - all
+        - trusty
+        - xenial
 
-  categories:
+  galaxy_tags:
     - rlang
+    - rstudio
     - statistics
+    - datascience
 
-dependencies: []
+dependencies:
+  - role: andrewrothstein.epel
+    version: v1.0.3
+  - role: andrewrothstein.git
+    version: v3.0.0
+  - role: andrewrothstein.gcc-toolbox
+    version: v1.0.4
+  - role: andrewrothstein.java-oracle-jdk
+    version: v1.0.2
+  - role: andrewrothstein.r
+    version: v1.0.6
   
