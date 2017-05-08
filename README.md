@@ -1,6 +1,6 @@
 andrewrothstein.rstudio-server
 =========
-[![CircleCI](https://circleci.com/gh/andrewrothstein/ansible-rstudio-server.svg?style=svg)](https://circleci.com/gh/andrewrothstein/ansible-rstudio-server)
+[![Build Status](https://travis-ci.org/andrewrothstein/ansible-rstudio-server.svg?branch=master)](https://travis-ci.org/andrewrothstein/ansible-rstudio-server)
 
 Installs [RStudio Server](https://www.rstudio.com/)
 
