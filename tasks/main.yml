@@ -22,6 +22,6 @@
     url: '{{rstudio_server_pkg_url}}'
     dest: /tmp/{{rstudio_server_pkg}}
     mode: 0644
-    timeout: {{rstudio_server_timeout}}
+    timeout: '{{rstudio_server_timeout}}'
 
 - include: '{{rstudio_server_installer|default("package")}}.yml'
