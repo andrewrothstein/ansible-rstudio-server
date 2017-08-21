@@ -28,11 +28,11 @@ galaxy_info:
 
 dependencies:
   - role: andrewrothstein.epel
-    version: v1.0.3
+    version: v1.0.5
   - role: andrewrothstein.git
-    version: v3.0.0
+    version: v3.0.1
   - role: andrewrothstein.gcc-toolbox
-    version: v1.0.4
+    version: v1.0.6
   - role: andrewrothstein.java-oracle-jdk
     version: v2.0.3
   - role: andrewrothstein.r
