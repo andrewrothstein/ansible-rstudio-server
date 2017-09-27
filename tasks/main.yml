@@ -24,4 +24,4 @@
     mode: 0644
     timeout: '{{rstudio_server_timeout}}'
 
-- include: '{{rstudio_server_installer|default("package")}}.yml'
+- include_tasks: '{{rstudio_server_installer|default("package")}}.yml'
