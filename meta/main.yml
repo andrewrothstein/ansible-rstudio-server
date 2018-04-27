@@ -32,9 +32,9 @@ dependencies:
   - role: andrewrothstein.git
     version: v3.0.1
   - role: andrewrothstein.gcc-toolbox
-    version: v1.0.6
+    version: v1.0.7
   - role: andrewrothstein.java-oracle-jdk
-    version: v2.0.5
+    version: v2.0.6
   - role: andrewrothstein.r
     version: v1.0.7
   

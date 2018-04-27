@@ -1,5 +1,11 @@
 ---
 # defaults file for rstudio
-rstudio_server_ver : '1.0.136'
+rstudio_server_ver : '1.1.447'
 rstudio_server_mirror: http://download2.rstudio.org
 rstudio_server_timeout: 3600
+
+# https://www.rstudio.com/products/rstudio/download-server/
+rstudio_server_checksums:
+  '1.1.447':
+    amd64.deb: md5:d450721686816a4c629abb0d51dc641d
+    x86_64.rpm: md5:742a56ed04cb7deb3f80bde6a07cdcda
