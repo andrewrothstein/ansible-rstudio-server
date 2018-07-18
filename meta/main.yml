@@ -34,7 +34,7 @@ dependencies:
   - role: andrewrothstein.gcc-toolbox
     version: v1.0.7
   - role: andrewrothstein.java-oracle-jdk
-    version: v2.0.6
+    version: v2.0.8
   - role: andrewrothstein.r
     version: v1.0.7
   
