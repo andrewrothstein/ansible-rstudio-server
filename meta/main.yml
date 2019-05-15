@@ -1,40 +1,36 @@
----
+dependencies:
+- role: andrewrothstein.epel
+  version: v1.0.6
+- role: andrewrothstein.git
+  version: v3.0.1
+- role: andrewrothstein.gcc-toolbox
+  version: v1.0.7
+- role: andrewrothstein.openjdk
+  version: v1.0.0
+- role: andrewrothstein.r
+  version: v1.0.7
 galaxy_info:
   author: Andrew Rothstein
-  description: RStudio server role
   company: BlackRock
+  description: RStudio server role
+  galaxy_tags:
+  - rlang
+  - rstudio
+  - statistics
+  - datascience
   license:
-    - MIT
+  - MIT
   min_ansible_version: 2.0
   platforms:
-    - name: EL
-      versions:
-        - 7
-    - name: Fedora
-      versions:
-        - 23
-        - 24
-        - 25
-    - name: Ubuntu
-      versions:
-        - trusty
-        - xenial
-
-  galaxy_tags:
-    - rlang
-    - rstudio
-    - statistics
-    - datascience
-
-dependencies:
-  - role: andrewrothstein.epel
-    version: v1.0.6
-  - role: andrewrothstein.git
-    version: v3.0.1
-  - role: andrewrothstein.gcc-toolbox
-    version: v1.0.7
-  - role: andrewrothstein.java-oracle-jdk
-    version: v2.1.2
-  - role: andrewrothstein.r
-    version: v1.0.7
-  
+  - name: EL
+    versions:
+    - 7
+  - name: Fedora
+    versions:
+    - 23
+    - 24
+    - 25
+  - name: Ubuntu
+    versions:
+    - trusty
+    - xenial
