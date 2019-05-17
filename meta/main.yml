@@ -1,6 +1,6 @@
 dependencies:
 - role: andrewrothstein.epel
-  version: v1.0.6
+  version: v1.0.8
 - role: andrewrothstein.git
   version: v3.0.1
 - role: andrewrothstein.gcc-toolbox
