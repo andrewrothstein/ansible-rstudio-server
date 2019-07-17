@@ -3,5 +3,5 @@
   become: yes
   become_user: root
   package:
-    name: /tmp/{{rstudio_server_pkg}}
+    name: /tmp/{{ rstudio_server_pkg }}
     state: present

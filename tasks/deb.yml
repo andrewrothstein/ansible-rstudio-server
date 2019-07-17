@@ -3,4 +3,4 @@
   become: yes
   become_user: root
   apt:
-    deb: /tmp/{{rstudio_server_pkg}}
+    deb: /tmp/{{ rstudio_server_pkg }}

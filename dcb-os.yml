@@ -1,5 +1,4 @@
 - centos_7
-- debian_jessie
 - debian_stretch
 - fedora_23
 - fedora_24
@@ -10,4 +9,4 @@
 - fedora_29
 - fedora_30
 - ubuntu_trusty
-- ubuntu_xenial
+- ubuntu_bionic

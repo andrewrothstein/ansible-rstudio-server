@@ -2,13 +2,14 @@ dependencies:
 - role: andrewrothstein.epel
   version: v1.0.8
 - role: andrewrothstein.git
-  version: v3.0.1
+  version: v3.0.4
 - role: andrewrothstein.gcc-toolbox
   version: v1.0.11
 - role: andrewrothstein.openjdk
-  version: v1.0.0
+  version: v2.0.0
+  openjdk_app: jdk
 - role: andrewrothstein.r
-  version: v1.0.7
+  version: v1.0.11
 galaxy_info:
   author: Andrew Rothstein
   company: BlackRock
@@ -22,6 +23,9 @@ galaxy_info:
   - MIT
   min_ansible_version: 2.0
   platforms:
+  - name: Debian
+    versions:
+    - stretch
   - name: EL
     versions:
     - 7
@@ -30,7 +34,12 @@ galaxy_info:
     - 23
     - 24
     - 25
+    - 26
+    - 27
+    - 28
+    - 29
+    - 30
   - name: Ubuntu
     versions:
     - trusty
-    - xenial
+    - bionic
