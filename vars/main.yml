@@ -3,4 +3,4 @@
 rstudio_server_pkg: '{{ rstudio_server_pkg_prefix }}-{{ rstudio_server_ver }}-{{ rstudio_server_arch }}.{{ rstudio_server_pkg_type }}'
 rstudio_server_pkg_url : '{{ rstudio_server_mirror }}/{{ rstudio_server_os }}/{{ rstudio_server_urlarch  | default(rstudio_server_arch) }}/{{ rstudio_server_pkg }}'
 
-rstudio_server_checksum: '{{ rstudio_server_checksums[rstudio_server_ver][rstudio_server_arch][rstudio_server_pkg_type }}'
+rstudio_server_checksum: '{{ rstudio_server_checksums[rstudio_server_ver][rstudio_server_arch][rstudio_server_pkg_type][rstudio_server_os] }}'
