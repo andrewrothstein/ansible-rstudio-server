@@ -18,7 +18,7 @@
   package:
     name: '{{ item }}'
     state: present
-    
+
 - name: download pkg...
   become: yes
   become_user: root
