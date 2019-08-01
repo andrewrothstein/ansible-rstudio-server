@@ -4,9 +4,9 @@ dependencies:
 - role: andrewrothstein.git
   version: v3.0.4
 - role: andrewrothstein.gcc-toolbox
-  version: v1.0.11
+  version: v1.0.12
 - role: andrewrothstein.openjdk
-  version: v2.0.0
+  version: v2.0.1
   openjdk_app: jdk
 - role: andrewrothstein.r
   version: v1.0.11
