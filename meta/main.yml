@@ -5,9 +5,9 @@ dependencies:
   version: v3.0.4
 - role: andrewrothstein.gcc-toolbox
   version: v1.0.12
-- role: andrewrothstein.openjdk
-  version: v2.0.1
-  openjdk_app: jdk
+- openjdk_app: jdk
+  role: andrewrothstein.openjdk
+  version: 2.0.4
 - role: andrewrothstein.r
   version: v1.1.2
 galaxy_info:
