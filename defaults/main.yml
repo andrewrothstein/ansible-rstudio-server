@@ -19,3 +19,18 @@ rstudio_server_checksums:
       rpm:
         # https://download2.rstudio.org/server/centos6/x86_64/rstudio-server-rhel-1.2.1335-x86_64.rpm
         centos6: md5:da696c9823eb1c044f04adf75f722b64
+  '1.2.5042':
+    amd64:
+      deb:
+        # https://download2.rstudio.org/server/trusty/amd64/rstudio-server-1.2.5042-amd64.deb
+        trusty: md5:6c368e281fb38405ed96b042ec0d9815
+        # https://download2.rstudio.org/server/debian9/x86_64/rstudio-server-1.2.5042-amd64.deb
+        debian9: md5:b718c8efb2fee2da251ae2f4dd6efb27
+        # https://download2.rstudio.org/server/bionic/amd64/rstudio-server-1.2.5042-amd64.deb
+        bionic: md5:cfe7a2186970a122a724898d247ea2ac
+    x86_64:
+      rpm:
+        # https://download2.rstudio.org/server/centos6/x86_64/rstudio-server-rhel-1.2.5042-x86_64.rpm
+        centos6: md5:869c532868b4d6337a9670e1fa4e9e70
+        # https://download2.rstudio.org/server/fedora28/x86_64/rstudio-server-rhel-1.2.5042-x86_64.rpm
+        fedora28: md5:8345ac56a27c41104f967318ba088f45
