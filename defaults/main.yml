@@ -1,6 +1,6 @@
 ---
 # defaults file for rstudio
-rstudio_server_ver: '1.2.1335'
+rstudio_server_ver: '1.2.5042'
 rstudio_server_mirror: http://download2.rstudio.org
 rstudio_server_timeout: 3600
 
@@ -24,10 +24,10 @@ rstudio_server_checksums:
       deb:
         # https://download2.rstudio.org/server/trusty/amd64/rstudio-server-1.2.5042-amd64.deb
         trusty: md5:6c368e281fb38405ed96b042ec0d9815
-        # https://download2.rstudio.org/server/debian9/x86_64/rstudio-server-1.2.5042-amd64.deb
-        debian9: md5:b718c8efb2fee2da251ae2f4dd6efb27
         # https://download2.rstudio.org/server/bionic/amd64/rstudio-server-1.2.5042-amd64.deb
         bionic: md5:cfe7a2186970a122a724898d247ea2ac
+        # https://download2.rstudio.org/server/debian9/x86_64/rstudio-server-1.2.5042-amd64.deb
+        debian9: md5:b718c8efb2fee2da251ae2f4dd6efb27
     x86_64:
       rpm:
         # https://download2.rstudio.org/server/centos6/x86_64/rstudio-server-rhel-1.2.5042-x86_64.rpm

@@ -1,36 +1,41 @@
 #!/usr/bin/env sh
-VER=1.2.1335
+set -e
 DIR=~/Downloads
 MIRROR=https://download2.rstudio.org/server
 
 dl()
 {
-    APP=$1
-    OS=$2
-    URLARCH=$3
-    ARCH=$4
-    PKGTYPE=$5
+    local ver=$1
+    local app=$2
+    local os=$3
+    local url_arch=$4
+    local arch=$5
+    local pkg_type=$6
 
-    FILE=${APP}-${VER}-${ARCH}.${PKGTYPE}
-    LFILENAME=${APP}-${VER}-${OS}-${ARCH}.${PKGTYPE}
-    URL=$MIRROR/$OS/$URLARCH/$FILE
-    LFILE=$DIR/$LFILENAME
+    local url="${MIRROR}/${os}/${url_arch}/${app}-${ver}-${arch}.${pkg_type}"
+    local lfile="${DIR}/${app}-${ver}-${os}-${arch}.${pkg_type}"
 
-    if [ ! -e $LFILE ];
+    if [ ! -e $lfile ];
     then
-        wget -q -O $LFILE $URL
+        wget -q -O $lfile $url
     fi
 
-    printf "        # %s\n" $URL
-    printf "        %s: md5:%s\n" $OS `md5sum $LFILE | awk '{print $1}'`
+    printf "        # %s\n" $url
+    printf "        %s: md5:%s\n" $os `md5sum $lfile | awk '{print $1}'`
 }
 
-printf "  '%s':\n" $VER
-echo "    amd64:"
-echo "      deb:"
-dl rstudio-server trusty amd64 amd64 deb
-dl rstudio-server bionic amd64 amd64 deb
-dl rstudio-server debian9 x86_64 amd64 deb
-echo "    x86_64:"
-echo "      rpm:"
-dl rstudio-server-rhel centos6 x86_64 x86_64 rpm
+dl_ver () {
+    local ver=$1
+    printf "  '%s':\n" $ver
+    echo "    amd64:"
+    echo "      deb:"
+    dl $ver rstudio-server trusty amd64 amd64 deb
+    dl $ver rstudio-server bionic amd64 amd64 deb
+    dl $ver rstudio-server debian9 x86_64 amd64 deb
+    echo "    x86_64:"
+    echo "      rpm:"
+    dl $ver rstudio-server-rhel centos6 x86_64 x86_64 rpm
+    dl $ver rstudio-server-rhel fedora28 x86_64 x86_64 rpm
+}
+
+dl_ver ${1:-1.2.5042}
