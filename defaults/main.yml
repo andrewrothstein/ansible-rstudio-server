@@ -1,6 +1,6 @@
 ---
 # defaults file for rstudio
-rstudio_server_ver: '1.2.5042'
+rstudio_server_ver: '1.4.1106'
 rstudio_server_mirror: http://download2.rstudio.org
 rstudio_server_timeout: 3600
 
@@ -34,3 +34,18 @@ rstudio_server_checksums:
         centos6: md5:869c532868b4d6337a9670e1fa4e9e70
         # https://download2.rstudio.org/server/fedora28/x86_64/rstudio-server-rhel-1.2.5042-x86_64.rpm
         fedora28: md5:8345ac56a27c41104f967318ba088f45
+  '1.4.1106':
+    amd64:
+      deb:
+        # https://download2.rstudio.org/server/xenial/amd64/rstudio-server-1.4.1106-amd64.deb
+        xenial: sha256:f477e94d8f18783718ac2286565fabd91bc9987587b0910522ca2ef3d5926981
+        # https://download2.rstudio.org/server/bionic/amd64/rstudio-server-1.4.1106-amd64.deb
+        bionic: sha256:a46bbfbcb468e7af6aa12280adb830056f4a10e3457fd2f5969bb31d4d476939
+        # https://download2.rstudio.org/server/debian9/x86_64/rstudio-server-1.4.1106-amd64.deb
+        debian9: sha256:312f0fa6fac16b4218bcb7ff6f02b6062eed1f03ff50a79e2a16a9198fc5e065
+    x86_64:
+      rpm:
+        # https://download2.rstudio.org/server/centos7/x86_64/rstudio-server-rhel-1.4.1106-x86_64.rpm
+        centos7: sha256:95c33599e29fedd020dcab4498676f5ee85e6d3805b77bd21a8dd61065ad926b
+        # https://download2.rstudio.org/server/centos8/x86_64/rstudio-server-rhel-1.4.1106-x86_64.rpm
+        centos8: sha256:0fd54e5ec3504c970c2e7c912fc651446e65e3ccb3b504d4615e2e97176ab406
