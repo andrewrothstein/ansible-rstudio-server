@@ -5,6 +5,6 @@ rstudio_server_deps:
 rstudio_server_installer: deb
 
 # For Ubuntu 20
-rstudio_server_pkg: 'rstudio-server-1.4.1106-amd64.deb'
-rstudio_server_pkg_url: 'https://download2.rstudio.org/server/bionic/amd64/{{ rstudio_server_pkg }}'
+rstudio_server_pkg: 'rstudio-server-{{ rstudio_server_ver }}-amd64.deb'
+rstudio_server_pkg_url: '{{ rstudio_server_mirror }}/server/bionic/amd64/{{ rstudio_server_pkg }}'
 rstudio_server_checksum: sha256:a46bbfbcb468e7af6aa12280adb830056f4a10e3457fd2f5969bb31d4d476939

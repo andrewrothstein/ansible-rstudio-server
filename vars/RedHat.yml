@@ -1,6 +1,6 @@
 ---
 # For Redhat 8 Centos 8 and Fedora
 
-rstudio_server_pkg: 'rstudio-server-rhel-1.4.1106-x86_64.rpm'
-rstudio_server_pkg_url: 'https://download2.rstudio.org/server/centos8/x86_64/{{ rstudio_server_pkg }}'
+rstudio_server_pkg: 'rstudio-server-rhel-{{ rstudio_server_ver }}-x86_64.rpm'
+rstudio_server_pkg_url: '{{ rstudio_server_mirror }}/server/centos8/x86_64/{{ rstudio_server_pkg }}'
 rstudio_server_checksum: sha256:0fd54e5ec3504c970c2e7c912fc651446e65e3ccb3b504d4615e2e97176ab406
