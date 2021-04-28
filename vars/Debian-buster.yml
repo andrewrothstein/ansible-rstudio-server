@@ -1,0 +1,10 @@
+---
+# For Deb install with deps
+rstudio_server_deps:
+  - gdebi-core
+rstudio_server_installer: deb
+
+# For Debian 9
+rstudio_server_pkg: 'rstudio-server-1.4.1106-amd64.deb'
+rstudio_server_pkg_url: 'https://download2.rstudio.org/server/xenial/x86_64/{{ rstudio_server_pkg }}'
+rstudio_server_checksum: sha256:312f0fa6fac16b4218bcb7ff6f02b6062eed1f03ff50a79e2a16a9198fc5e065

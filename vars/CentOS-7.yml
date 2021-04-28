@@ -1,0 +1,6 @@
+---
+# For Centos 7
+
+rstudio_server_pkg: 'rstudio-server-rhel-1.4.1106-x86_64.rpm'
+rstudio_server_pkg_url: 'https://download2.rstudio.org/server/centos7/x86_64/{{ rstudio_server_pkg }}'
+rstudio_server_checksum: sha256:95c33599e29fedd020dcab4498676f5ee85e6d3805b77bd21a8dd61065ad926b
