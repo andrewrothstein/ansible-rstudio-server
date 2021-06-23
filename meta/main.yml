@@ -10,6 +10,7 @@ dependencies:
   version: v2.0.4
 - role: andrewrothstein.r
   version: v1.1.2
+  tags: never
 galaxy_info:
   author: Andrew Rothstein
   company: BlackRock
